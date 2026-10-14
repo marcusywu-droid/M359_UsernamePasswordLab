@@ -78,20 +78,21 @@ public class UserInfoLab {
         boolean len = true;
         boolean dig = true;
         for(int i = 0; i < password.length(); i++){
-            if (password.substring(i, i + 1).equals(password.substring(i, i + 1))){
+            if (password.substring(i, i + 1).equals(password.substring(i, i + 1).toUpperCase())){
                 capCheck = true;
             }
         }
-        if(!(password.length() >= 8)){
+        if(!(password.length() >= 8)) {
             System.out.println("Invalid, Too Short");
             len = false;
-            if(!capCheck){
-                System.out.println("Invalid, No Uppercase Letter");
-                if(!containsDigit(password)){
-                    dig = false;
-                    System.out.println("Invalid, No Digit");
-                }
-            }
+        }
+        if(!capCheck) {
+            System.out.println("Invalid, No Uppercase Letter");
+        }
+        if(!containsDigit(password)){
+            dig = false;
+            System.out.println("Invalid, No Digit");
+
         }
         if(len && capCheck && dig){
             return true;
