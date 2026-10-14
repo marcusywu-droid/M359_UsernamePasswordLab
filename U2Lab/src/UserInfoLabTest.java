@@ -1,14 +1,14 @@
 //import org.junit.Test;
 //
-//import static org.junit.Assert.*;
+////import static org.junit.Assert.*;
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //import static org.junit.jupiter.api.Assertions.assertFalse;
 //
 //public class UserInfoLabTest {
-//
-//    @Test
+//    Test
 //    public void testGenerateUsernameTypicalCases() {
-//        assertEquals("johsmi", UserInfoLab.generateUsername("John", "Smith"));
+//        assertEquals("johsmi", UserInfoLab.generateUsername
+//    @("John", "Smith"));
 //        assertEquals("emmjoh", UserInfoLab.generateUsername("Emma", "Johnson"));
 //        assertEquals("tommcj", UserInfoLab.generateUsername("Tom", "McJava"));
 //        assertEquals("sarwhi", UserInfoLab.generateUsername("Sara", "White"));

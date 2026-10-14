@@ -104,7 +104,7 @@ public class UserInfoLab {
     public static String maskCreditCard(String creditCardNumber) {
         if(creditCardNumber.length() == 16){
             if(allDigits(creditCardNumber)){
-                return "**** **** ****" + creditCardNumber.substring(12);
+                return "**** **** **** " + creditCardNumber.substring(12);
             }
         }
         return "N/A";
